@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+  color: #6D696A;
+  font-family: 'Inconsolata', 微軟正黑體; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DBD4D3; }
+
+.box {
+  padding: 20px;
+  padding-bottom: 25px;
+  box-shadow: 3px 3px 8px;
+  border-radius: 5px;
+  background-color: #EBEBEB; }
+
+h2 {
+  text-align: right;
+  font-size: 35px;
+  margin: 15px 0; }
+
+label {
+  display: inline-block;
+  width: 75px;
+  font-size: 20px;
+  font-weight: 800;
+  margin-right: 10px; }
+
+input {
+  margin: 10px 0;
+  font-size: 20px;
+  padding: 3px;
+  border: solid 1px; }
+
+input:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px; }
+
+input[type="button"] {
+  margin: 0;
+  width: 100%;
+  padding: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none; }
+  input[type="button"]:hover {
+    box-shadow: 0 0 1px 1px; }
+  input[type="button"]:active {
+    transform: translateY(1px);
+    box-shadow: none; }
+
+.change {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: solid 1.5px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #878283; }
+
+.msg {
+  min-height: 30px;
+  margin: 10px 0;
+  font-weight: 600; }
+
+.signBtn {
+  margin-left: auto;
+  border: solid 1px; }
+
+.success {
+  color: #1985A1; }
+
+.error {
+  color: #FE4A49; }
