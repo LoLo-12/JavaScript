@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title JavaScript-Taiwan Food
+        link(rel="stylesheet", href="css/all.css")
+        link(href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+    body
+        .box
+            header
+                .introduce
+                    h2 你知道台灣有什麼特色美食嗎?
+                    button.wantKnow.animated.heartBeat(type="button") click me !
+                .main.hide
+                    h1 台灣鄉村料理
+                    .areaLink
+                        a.north(href="#") 北部地區
+                        a.central(href="#") 中部地區
+                        a.southern(href="#") 南部地區
+                        a.east(href="#") 東部地區
+                        a.island(href="#") 離島地區
+            section.hide
+                h2.mainName
+                hr
+                ul.itemBox
+                //- li
+                //-   img(src="https://ezgo.coa.gov.tw/Uploads/opendata/TainmaMain01/APPLY_D/20151007173924.jpg", alt="")
+                //-   h2 湖莓宴餐坊
+                //-   .icon
+                //-     i.far.fa-credit-card
+                //-     .coinIcon 
+                //-       .coin $
+                //-       .coin1
+                //-   h3 苗栗縣 大湖鄉
+                //-   p.description 湖苺宴開在大湖酒莊的4樓，是大湖地區農會經營的田媽媽餐坊，但是不同於一般田園風格的田媽媽主題餐廳，主打草莓創意料理的湖苺宴，
+                ul.pagesNum
+                //-   li
+                //-     a(href="#") <
+                //-   li 
+                //-     a.active(href="#") 1
+                //-   li 
+                //-     a(href="#") 2
+                //-   li
+                //-     a(href="#") >
+            footer
+                h2 農村地方美食小吃特色料理
+                p 資料來源 : 政府資料開放平台
+
+        script(src="js/all.js")

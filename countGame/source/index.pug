@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="all.css")
+        link(href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
+    body
+        .pageStart.isActive
+            .startTitle
+                h1.title 60 
+                span.sign + - × ÷
+                h2 SECONDS CHALLENGE
+            .btn.bone START
+            h3.text try to answer more as you can
+            
+        .pageView
+            .viewHead
+                .viewTitle
+                    h2 60 SECONDS CHALLENGE
+                    .scoreText
+                        span score
+                        span.score 0
+                .time 60 s
+            .viewContent
+                .num1 
+                .symbol 
+                .num2 
+                .equal =
+                .ans
+                    input.result(type="number")
+            .viewMark press enter to answer
+            
+        .pageEnd
+            h2 60 SECONDS CHALLENGE
+            h3.subTitle YOUR FINAL SCORE
+            .finalScore 
+            .btn.btwo TRY AGAIN
+        
+        script(src="all.js")

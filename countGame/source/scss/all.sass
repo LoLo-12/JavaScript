@@ -1,0 +1,162 @@
+*
+  font-family: 'Grenze', sans-serif
+  background-color: #721817
+  color: #E0E0E2
+
+h1,h2,h3
+  margin: 0
+
+html,body
+  width: 100%
+  height: 100%
+  padding: 0
+  margin: 0
+  
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  
+.pageStart
+  display: none
+  .text
+    text-align: center
+    font-size: 30px
+    letter-spacing: 1.2px
+  
+.startTitle
+  position: relative
+  .title
+    font-size: 220px
+    display: inline-block
+    line-height: 150px
+    margin-left: 20px
+  .sign
+    font-size: 70px
+    line-height: 60px
+    position: absolute
+    padding-bottom: 10px
+    border-bottom: double 10px
+    right: 40px
+    bottom: 70px
+    transform: rotate(30deg)
+    transform-origin: bottom right
+    color: #F2AF29
+    font-weight: 600
+    animation: signmove 2s ease-in-out
+  h2
+    font-size: 50px
+  
+@keyframes signmove
+  0%
+    transform: rotate(80deg)
+  50%
+    transform: rotate(30deg)
+  60%
+    transform: rotate(36deg)
+  70%
+    transform: rotate(30deg)
+  80%
+    transform: rotate(34deg)
+  90%
+    transform: rotate(30deg)
+  95%
+    transform: rotate(32deg)
+  100%
+    transform: rotate(30deg)
+
+  
+.btn
+  font-size: 30px
+  text-align: center
+  margin-top: 80px
+  font-weight: 600
+  letter-spacing: 1.5px
+  background-color: #F2AF29
+  padding: 5px 0
+  &:hover
+    background-color: #d69a24
+    cursor: pointer
+
+.pageView
+  display: none
+
+.viewHead
+  width: 850px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  .viewTitle
+    font-size: 20px
+    h2
+      border-bottom: double 5px
+    .scoreText 
+      font-size: 30px
+      margin-right: 10px
+      .score
+        font-size: 55px
+        color: #F2AF29
+        font-weight: 600
+        margin-left: 10px
+  .time
+    font-size: 120px
+    line-height: 120px
+
+.slogan
+  font-size: 30px
+  text-align: right
+    
+.viewContent
+  margin-top: 50px
+  display: flex
+  font-size: 100px
+  justify-content: space-around
+  .num1,.num2
+    width: 150px
+    color: #F2AF29
+    font-weight: 600
+  .num1
+    text-align: right
+  .ans 
+    width: 200px
+    border: solid 1px
+    input
+      box-sizing: border-box
+      width: 100%
+      padding: 10px
+      font-size: 100px
+      outline: none
+      border: solid 2px
+    input::-webkit-outer-spin-button,input::-webkit-inner-spin-button
+      -webkit-appearance: none
+
+.viewMark
+  font-size: 30px
+  text-align: right
+  
+.pageEnd
+  display: none
+  text-align: center
+  h2
+    font-size: 40px
+    border-bottom: double 8px
+  .subTitle
+    font-size: 60px
+    margin: 20px 0
+    position: relative
+    &:before,&:after
+      position: absolute
+      display: block
+      content: "~"
+    &:before
+      left: -40px
+    &:after
+      right: -40px
+      top: 0
+  .finalScore
+    font-size: 100px
+    font-weight: 600
+    color: #F2AF29
+      
+.isActive
+  display: block

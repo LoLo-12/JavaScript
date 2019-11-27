@@ -2,3 +2,7 @@ logIn/node_modules
 logIn/*.json
 clock/node_modules
 clock/*.json
+countGame/node_modules
+countGame/*.json
+web/node_modules
+web/*.json

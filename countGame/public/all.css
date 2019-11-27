@@ -1,0 +1,161 @@
+* {
+  font-family: 'Grenze', sans-serif;
+  background-color: #721817;
+  color: #E0E0E2; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pageStart {
+  display: none; }
+  .pageStart .text {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.2px; }
+
+.startTitle {
+  position: relative; }
+  .startTitle .title {
+    font-size: 220px;
+    display: inline-block;
+    line-height: 150px;
+    margin-left: 20px; }
+  .startTitle .sign {
+    font-size: 70px;
+    line-height: 60px;
+    position: absolute;
+    padding-bottom: 10px;
+    border-bottom: double 10px;
+    right: 40px;
+    bottom: 70px;
+    transform: rotate(30deg);
+    transform-origin: bottom right;
+    color: #F2AF29;
+    font-weight: 600;
+    animation: signmove 2s ease-in-out; }
+  .startTitle h2 {
+    font-size: 50px; }
+
+@keyframes signmove {
+  0% {
+    transform: rotate(80deg); }
+  50% {
+    transform: rotate(30deg); }
+  60% {
+    transform: rotate(36deg); }
+  70% {
+    transform: rotate(30deg); }
+  80% {
+    transform: rotate(34deg); }
+  90% {
+    transform: rotate(30deg); }
+  95% {
+    transform: rotate(32deg); }
+  100% {
+    transform: rotate(30deg); } }
+
+.btn {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: #F2AF29;
+  padding: 5px 0; }
+  .btn:hover {
+    background-color: #d69a24;
+    cursor: pointer; }
+
+.pageView {
+  display: none; }
+
+.viewHead {
+  width: 850px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .viewHead .viewTitle {
+    font-size: 20px; }
+    .viewHead .viewTitle h2 {
+      border-bottom: double 5px; }
+    .viewHead .viewTitle .scoreText {
+      font-size: 30px;
+      margin-right: 10px; }
+      .viewHead .viewTitle .scoreText .score {
+        font-size: 55px;
+        color: #F2AF29;
+        font-weight: 600;
+        margin-left: 10px; }
+  .viewHead .time {
+    font-size: 120px;
+    line-height: 120px; }
+
+.slogan {
+  font-size: 30px;
+  text-align: right; }
+
+.viewContent {
+  margin-top: 50px;
+  display: flex;
+  font-size: 100px;
+  justify-content: space-around; }
+  .viewContent .num1, .viewContent .num2 {
+    width: 150px;
+    color: #F2AF29;
+    font-weight: 600; }
+  .viewContent .num1 {
+    text-align: right; }
+  .viewContent .ans {
+    width: 200px;
+    border: solid 1px; }
+    .viewContent .ans input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      font-size: 100px;
+      outline: none;
+      border: solid 2px; }
+    .viewContent .ans input::-webkit-outer-spin-button, .viewContent .ans input::-webkit-inner-spin-button {
+      -webkit-appearance: none; }
+
+.viewMark {
+  font-size: 30px;
+  text-align: right; }
+
+.pageEnd {
+  display: none;
+  text-align: center; }
+  .pageEnd h2 {
+    font-size: 40px;
+    border-bottom: double 8px; }
+  .pageEnd .subTitle {
+    font-size: 60px;
+    margin: 20px 0;
+    position: relative; }
+    .pageEnd .subTitle:before, .pageEnd .subTitle:after {
+      position: absolute;
+      display: block;
+      content: "~"; }
+    .pageEnd .subTitle:before {
+      left: -40px; }
+    .pageEnd .subTitle:after {
+      right: -40px;
+      top: 0; }
+  .pageEnd .finalScore {
+    font-size: 100px;
+    font-weight: 600;
+    color: #F2AF29; }
+
+.isActive {
+  display: block; }
